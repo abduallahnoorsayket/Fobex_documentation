@@ -6,16 +6,19 @@
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="assets/image/logo//favicon2.png"
+      href="./assets/image/logo//favicon2.png"
     />
     <title>Fobex - Documentation</title>
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <div id="app" data-server-rendered="true">
-      <div class="theme-container">
+      <div id="themeContainer" class="theme-container">
         <header class="navbar">
-          <div class="sidebar-button">
+          <a href="./index.html" class="home-link router-link-active">
+            <img src="./assets/image/logo/nav-logo.svg" alt="" />
+          </a>
+          <div id="sidebar-button" class="sidebar-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
@@ -29,34 +32,17 @@
               ></path>
             </svg>
           </div>
-          <a href="/" class="home-link router-link-active">
-            <!-- <span class="site-name">Fobex</span> -->
-            <img src="assets/image/logo/nav-logo.svg" alt="" />
-          </a>
         </header>
         <div class="sidebar-mask"></div>
-        <aside class="sidebar">
-          <nav class="nav-links">
-            <div class="nav-item">
-              <a
-                href="index.html"
-                aria-current="page"
-                class="nav-link router-link-exact-active router-link-active"
-              >
-                Guide
-              </a>
-            </div>
-          </nav>
+        <aside id="sidebar" class="sidebar">
           <ul class="sidebar-links">
             <li>
               <section class="sidebar-group depth-0">
-                <p class="sidebar-heading open">
-                  <!-- <span>Guide</span> -->
-                </p>
+                <p class="sidebar-heading open"></p>
                 <ul class="sidebar-links sidebar-group-items">
                   <li>
                     <a
-                      href="index.html"
+                      href="./index.html"
                       aria-current="page"
                       class="active sidebar-link"
                       >FOBEX NAVIGATION</a
@@ -64,67 +50,71 @@
                     <ul class="sidebar-sub-headers">
                       <li class="sidebar-sub-header">
                         <a
-                          href="index.html#getting-started"
+                          href="./index.html#getting-started"
                           class="sidebar-link"
                           >Getting Started</a
                         >
                       </li>
 
                       <li class="sidebar-sub-header">
-                        <a href="index.html#files-included" class="sidebar-link"
+                        <a
+                          href="./index.html#files-included"
+                          class="sidebar-link"
                           >Files Included</a
                         >
                       </li>
 
                       <li class="sidebar-sub-header">
                         <a
-                          href="index.html#frontend-file-structures"
+                          href="./index.html#frontend-file-structures"
                           class="sidebar-link"
                           >Frontend File Structures</a
                         >
                       </li>
                       <li class="sidebar-sub-header">
-                        <a href="index.html#html-structure" class="sidebar-link"
+                        <a
+                          href="./index.html#html-structure"
+                          class="sidebar-link"
                           >HTML Structure</a
                         >
                       </li>
                       <li class="sidebar-sub-header">
                         <a
-                          href="index.html#css-files-structure"
+                          href="./index.html#css-files-structure"
                           class="sidebar-link"
                           >CSS Files Structure</a
                         >
                       </li>
                       <li class="sidebar-sub-header">
                         <a
-                          href="index.html#google-fonts-include"
+                          href="./index.html#google-fonts-include"
                           class="sidebar-link"
                           >Google Fonts Include</a
                         >
                       </li>
                       <li class="sidebar-sub-header">
                         <a
-                          href="index.html#javaScript-structure"
+                          href="./index.html#javaScript-structure"
                           class="sidebar-link"
                           >JavaScript Structure</a
                         >
                       </li>
                       <li class="sidebar-sub-header">
                         <a
-                          href="index.html#how-to-edit-bootstrap"
+                          href="./index.html#how-to-edit-bootstrap"
                           class="sidebar-link"
-                          >How to edit Bootstrap css on your computer
+                          >How to edit Bootstrap css on your Computer
                         </a>
                       </li>
                       <li class="sidebar-sub-header">
                         <a
-                          href="index.html#sources-and-credits"
+                          href="./index.html#sources-and-credits"
                           class="sidebar-link"
                           >Sources and Credits</a
                         >
                       </li>
                       <li class="sidebar-sub-header">
-                        <a href="index.html#support-desk" class="sidebar-link"
+                        <a href="./index.html#support-desk" class="sidebar-link"
                           >Support Desk</a
                         >
                       </li>
@@ -222,13 +212,6 @@
               <img src="./assets/image/other/Fobex file structure.png" alt="" />
             </section>
 
-            <!-- <h3 id="nuxt"><a href="#nuxt" class="header-anchor">#</a> Nuxt</h3>
-            <p>
-              Nuxt is capable of doing what VuePress does, but it’s designed for
-              building applications. VuePress is focused on content-centric
-              static sites and provides features tailored for technical
-              documentation out of the box.
-            </p> -->
             <section>
               <h2 id="html-structure">
                 <a href="#html-structure" class="header-anchor">#</a>
@@ -267,7 +250,7 @@
             <section>
               <h2 id="how-to-edit-bootstrap">
                 <a href="#how-to-edit-bootstrap" class="header-anchor">#</a>
-                How to edit Bootstrap css on your computer
+                How to edit Bootstrap css on your Computer
               </h2>
               <br />
               <p>
@@ -340,6 +323,15 @@
                   <i class="doc__credits--icons icofont-tick-mark"></i>
                   <a
                     class="doc__credits--links"
+                    href="https://getbootstrap.com/docs/4.0/getting-started/introduction/"
+                  >
+                    Bootstrap 4</a
+                  >
+                </li>
+                <li class="doc__credits--list">
+                  <i class="doc__credits--icons icofont-tick-mark"></i>
+                  <a
+                    class="doc__credits--links"
                     href="https://swiperjs.com/demos"
                     >Swiper Slider</a
                   >
@@ -395,7 +387,7 @@
                   href="https://fobex.thimcloud.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Thimcloud</a
+                  >Fobex</a
                 >. All Right Reserved
               </span>
             </p>
@@ -405,5 +397,7 @@
       </div>
       <div class="global-ui"><!----><!----></div>
     </div>
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
